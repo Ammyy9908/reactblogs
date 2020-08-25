@@ -12,7 +12,7 @@ export default class NavbarCustom extends React.Component{
     render(){
        return<Navbar expand="lg" variant="light" className="p-3 navbar">
         
-  <Navbar.Brand href="/" className="ml-5"> <strong>DevBlogs</strong></Navbar.Brand>
+  <Navbar.Brand href="/"> <strong>DevBlogs</strong></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     {localStorage.getItem('userData')?
