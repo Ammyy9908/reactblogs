@@ -62,7 +62,7 @@ const ProtectedRoute = ({
             <button className="btn btn-danger"
         onClick={() => {
           localStorage.clear();
-          props.history.push('https://ammyy9908.github.io/reactblog/login');
+          props.history.push('/login');
           window.location.reload(false);
         }}
       >

@@ -12,7 +12,7 @@ export default class Login extends React.Component {
     {
       return (<Redirect
         to={{
-          pathname: "/reactblog/",
+          pathname: "/",
           state: {
             from: this.props.location
           }
