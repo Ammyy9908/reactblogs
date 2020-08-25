@@ -20,7 +20,7 @@ const CreatePost = (props)=>{
                 axios.post(`https://desolate-reaches-85560.herokuapp.com/new/uid/${JSON.parse(localStorage.getItem('userData'))['uid']}`, data).then((response)=>{
 
                     if(response.status===200){
-                            props.history.push("/reactblog/");
+                            props.history.push("/");
                     }
                 }).catch((error)=>{
                     console.log(error);
