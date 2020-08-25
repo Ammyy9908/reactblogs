@@ -62,7 +62,7 @@ export default class Login extends React.Component {
                           if(userData.isVerified){
                             console.log('User All Checkpoint Completed!');
                             localStorage.setItem('userData', JSON.stringify(userData));
-                            window.location = "/reactblog/";
+                            window.location = "/";
                           }
                           else{
                             console.log('User Email is Not Verified');
