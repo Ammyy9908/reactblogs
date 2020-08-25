@@ -62,7 +62,7 @@ const ProtectedRoute = ({
             <button className="btn btn-danger"
         onClick={() => {
           localStorage.clear();
-          props.history.push('/login');
+          props.history.push('/');
           window.location.reload(false);
         }}
       >
@@ -92,7 +92,7 @@ const ProtectedRoute = ({
             return (
               <Redirect
                 to={{
-                  pathname: "https://ammyy9908.github.io/reactblog/login",
+                  pathname: "/",
                   state: {
                     from: props.location
                   }
