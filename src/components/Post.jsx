@@ -47,7 +47,7 @@ export default class Post extends React.Component{
                        {this.props.likes>0?<p className="text-muted">{this.props.likedBy.length>1? this.props.likedBy[0]+" and "+this.props.likedBy.filter(item => item!==this.props.likedBy[0]).length+" others likes this post":this.props.likedBy[0]+" like this post"}</p>:null}
                     <p> {localStorage.getItem('userData')!==null?!this.props.likedBy.includes(JSON.parse(localStorage.getItem('userData'))['name'])?<button className="btn btn-link btn-sm ml-0" onClick={this.likPost} id={this.props.id}>Like</button>:<button className="btn btn-link btn-sm ml-0" id={this.props.id} onClick={this.unlikePost}>Unlike</button>:null}<FontAwesomeIcon icon={faHeart} color="red" /> {this.props.likes}</p>
                     <strong>Tags:</strong>{this.props.tags.map(tag =>tag+",")}<br/><br/>
-                    <div className="row">
+                    {/* <div className="row">
 
                     <div className="col-lg-10">
 
@@ -56,7 +56,7 @@ export default class Post extends React.Component{
                    
                    
                     
-                    </div>
+                    </div> */}
                 </div>
         </div>
     }
