@@ -16,7 +16,7 @@ export default class Post extends React.Component{
         axios.post(`http://localhost:5000/post/like/uid/${id}`,{id:JSON.parse(localStorage.getItem('userData'))['uid']}).then((response)=>{
             if(response.status===200)
             {
-                window.location = "https://ammyy9908.github.io/reactblog/";
+                window.location = "/";
             }
                 }).catch((error)=>{
                     console.log(error);
@@ -29,7 +29,7 @@ export default class Post extends React.Component{
         axios.post(`https://desolate-reaches-85560.herokuapp.com/post/dislike/uid/${id}`,{id:JSON.parse(localStorage.getItem('userData'))['uid']}).then((response)=>{
             if(response.status===200)
             {
-                window.location = "https://ammyy9908.github.io/reactblog/";
+                window.location = "/";
             }
                 }).catch((error)=>{
                     console.log(error);
