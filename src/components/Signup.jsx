@@ -98,7 +98,7 @@ export default class SignUp extends React.Component {
                                         axios.post('https://desolate-reaches-85560.herokuapp.com/register', User)
                                       .then((res) => {
                                         if(res.data){
-                                          window.location = "/reactblog/login";
+                                          window.location = "/";
                           
                                         }
                                         else{
